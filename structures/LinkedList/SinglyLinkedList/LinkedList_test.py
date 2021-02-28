@@ -1,11 +1,11 @@
 import unittest
-from LinkedList import ListNode, MyLinkedList
+from LinkedList import ListNode, SinglyLinkedList
 
 
 class LinkedListTest(unittest.TestCase):
     def setUp(self):
         self.result = []
-        self.obj = MyLinkedList()
+        self.obj = SinglyLinkedList()
 
     def test_get_empty_list(self):
         self.result.append(self.obj.get(0))
