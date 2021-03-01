@@ -1,7 +1,6 @@
-import sys
-import os
-
-sys.path.append(os.path.abspath('../algorithms_structures'))
+# import sys
+# import os
+# sys.path.append(os.path.abspath('../algorithms_structures'))
 from modules.LinkedList import ListNode, SinglyLinkedList
 
 

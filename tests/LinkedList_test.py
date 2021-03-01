@@ -1,5 +1,5 @@
 import unittest
-from LinkedList import ListNode, SinglyLinkedList
+from structures.LinkedList.SinglyLinkedList.LinkedList import ListNode, SinglyLinkedList
 
 
 class LinkedListTest(unittest.TestCase):
