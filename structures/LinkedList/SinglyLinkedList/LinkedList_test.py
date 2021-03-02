@@ -1,5 +1,8 @@
 import unittest
-from structures.LinkedList.SinglyLinkedList.LinkedList import ListNode, SinglyLinkedList
+from LinkedList import ListNode, SinglyLinkedList
+
+# If you want to use interactive test mode uncomment this and replace it to test folder
+# from structures.LinkedList.SinglyLinkedList.LinkedList import ListNode, SinglyLinkedList
 
 
 class LinkedListTest(unittest.TestCase):
@@ -9,7 +12,9 @@ class LinkedListTest(unittest.TestCase):
 
     def test_get_empty_list(self):
         self.result.append(self.obj.get(0))
-        self.assertEqual(self.result, [-1, ])
+        self.assertEqual(self.result, [
+            -1,
+        ])
 
     def test_add_head(self):
         self.obj.addAtHead(5)
@@ -17,7 +22,11 @@ class LinkedListTest(unittest.TestCase):
         self.obj.addAtHead(10)
         for i in range(2):
             self.result.append(self.obj.get(i))
-        self.assertEqual(self.result, [5, 10, 5, ])
+        self.assertEqual(self.result, [
+            5,
+            10,
+            5,
+        ])
 
     def test_add_tail(self):
         self.obj.addAtTail(5)
@@ -26,7 +35,12 @@ class LinkedListTest(unittest.TestCase):
         self.obj.addAtTail(15)
         for i in range(3):
             self.result.append(self.obj.get(i))
-        self.assertEqual(self.result, [5, 10, 5, 15, ])
+        self.assertEqual(self.result, [
+            5,
+            10,
+            5,
+            15,
+        ])
 
     def test_add_index(self):
         self.obj.addAtIndex(0, 5)

@@ -1,6 +1,9 @@
 import unittest
 from modules.LinkedList import ListNode, SinglyLinkedList
-from structures.LinkedList.TwoPointerTechnique.TwoPointer import TwoPointer
+from TwoPointer import TwoPointer
+
+# If you want to use interactive test mode uncomment this and replace it to test folder
+# from structures.LinkedList.TwoPointerTechnique.TwoPointer import TwoPointer
 
 
 class TwoPointerTest(unittest.TestCase):

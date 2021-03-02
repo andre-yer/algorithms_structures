@@ -3,7 +3,7 @@
 ## SET UP (Visual Studio Code)
 
 ### Windows
-For setting up this project first of all open it in main folder `~/algorithms_structures`. Then go to `Settings->settings.json` and add those lines:
+For setting up this project first of all open it in main folder `~/algorithms_structures`. Then go to `Settings -> settings.json` and add those lines:
 ```json
 {
     "python.linting.pylintArgs": [
@@ -25,7 +25,7 @@ For example, my json file is:
     },
 }
 ```
-To activate unittest go to `.vscode->setting.json` and set up it like this:
+If you want use interactive test mode of VS Code activate unittest by going to `.vscode -> setting.json` and set up it like this:
 ```json
 {
     "python.testing.unittestArgs": [
@@ -43,11 +43,11 @@ To activate unittest go to `.vscode->setting.json` and set up it like this:
 
 ### MAC OS
 
-For setting up this project first of all open it in main folder `~/algorithms_structures`. Then go to `Settings->settings.json` and add those lines:
+For setting up this project first of all open it in main folder `~/algorithms_structures`. Then go to `Settings -> settings.json` and add those lines:
 ```json
 {
     "python.linting.pylintArgs": [
-        "--init-hook='import sys; sys.path.append(\"path_to_project\\algorithms_structures\")'"
+        "--init-hook='import sys; sys.path.append(\"path_to_project/algorithms_structures\")'"
     ],
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "path_to_project/algorithms_structures"
@@ -58,14 +58,14 @@ For example, my json file is:
 ```json
 {
     "python.linting.pylintArgs": [
-        "--init-hook='import sys; sys.path.append(\"c:\\Users\\Andrey\\algorithms_structures\")'"
+        "--init-hook='import sys; sys.path.append(\"/Users/andrew19972004/algorithms_structures\")'"
     ],
     "terminal.integrated.env.osx": {
-        "PYTHONPATH": "Users/andrew19972004/algorithms_structures"
+        "PYTHONPATH": "/Users/andrew19972004/algorithms_structures"
     },
 }
 ```
-To activate unittest go to `.vscode->setting.json` and set up it like this:
+If you want use interactive test mode of VS Code activate unittest by going to `.vscode -> setting.json` and set up it like this:
 ```json
 {
     "python.testing.unittestArgs": [
