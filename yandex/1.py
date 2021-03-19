@@ -12,7 +12,7 @@ class Robot:
         for item in dirs:
             next_x = self.x + self.dirs_dict[item][0]
             next_y = self.y + self.dirs_dict[item][1]
-            if 0 <= next_x <= 100 or 0 <= next_y <= 100:
+            if 0 <= next_x <= 100 and 0 <= next_y <= 100:
                 self.x += self.dirs_dict[item][0]
                 self.y += self.dirs_dict[item][1]
                 self.pathes.append((self.x, self.y))
@@ -23,5 +23,5 @@ class Robot:
 
 
 r = Robot((0, 0))
-print(r.move('NENW'))
+print(r.move('SSSSS'))
 print(*r.path())

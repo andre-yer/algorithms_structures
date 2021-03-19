@@ -10,7 +10,8 @@ class PearsBasket:
         pear_div = self.amount // other
         for i in range(other):
             pears_list.append(__class__(pear_div))
-        pears_list.append(__class__(pear_mod))
+        if pear_mod != 0:
+            pears_list.append(__class__(pear_mod))
         return pears_list
 
     def __mod__(self, other):
@@ -35,11 +36,7 @@ class PearsBasket:
 
 
 
-
-
-
-
-pb = PearsBasket(17)
+pb = PearsBasket(20)
 array = pb // 4
 print(array)
 pb_2 = PearsBasket(13)
