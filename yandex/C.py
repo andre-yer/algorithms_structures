@@ -1,8 +1,7 @@
 class PearsBasket:
-    
+
     def __init__(self, amount):
         self.amount = amount
-
 
     def __floordiv__(self, other):
         pears_list = []
@@ -34,14 +33,17 @@ class PearsBasket:
         return '{}({})'.format(__class__.__name__, self.amount)
 
 
+def main():
+    pb = PearsBasket(20)
+    array = pb // 4
+    print(array)
+    pb_2 = PearsBasket(13)
+    pb_3 = pb + pb_2
+    print(pb_3)
+    print(pb_3 % 7)
+    pb - 2
+    print([pb])
 
 
-pb = PearsBasket(20)
-array = pb // 4
-print(array)
-pb_2 = PearsBasket(13)
-pb_3 = pb + pb_2
-print(pb_3)
-print(pb_3 % 7)
-pb - 2
-print([pb])
+if __name__ == '__main__':
+    main()

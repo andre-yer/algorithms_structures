@@ -16,12 +16,17 @@ class Robot:
                 self.x += self.dirs_dict[item][0]
                 self.y += self.dirs_dict[item][1]
                 self.pathes.append((self.x, self.y))
-        return (self.x, self.y)
+        return self.x, self.y
 
     def path(self):
         return self.pathes
 
 
-r = Robot((0, 0))
-print(r.move('SSSSS'))
-print(*r.path())
+def main():
+    r = Robot((0, 0))
+    print(r.move('SSSSS'))
+    print(*r.path())
+
+
+if __name__ == '__main__':
+    main()

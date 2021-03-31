@@ -1,7 +1,4 @@
-from abc import ABC
-
-
-class AbstractCat(ABC):
+class AbstractCat:
 
     def __init__(self):
         self.weight = 0
@@ -28,7 +25,7 @@ class Kitten(AbstractCat):
         self.weight = weight
 
     def meow(self):
-        return 'meow'
+        return 'meow...'
 
     def sleep(self):
         return 'Snore' * int(self.weight // 5)
@@ -41,7 +38,7 @@ class Cat(Kitten):
         self.name = name
 
     def meow(self):
-        return 'MEOW'
+        return 'MEOW...'
 
     def get_name(self):
         return self.name
@@ -50,9 +47,17 @@ class Cat(Kitten):
         return 'Got it!'
 
 
-kit = Kitten(15)
-kit.eat(24)
-print(kit)
-cat = Cat(41, 'Molly')
-print(cat.catch_mice())
-print(cat)
+def main():
+    abscat = AbstractCat()
+    abscat.eat(125)
+    abscat.eat(17)
+    print(abscat)
+    kit = Kitten(21)
+    print(kit.sleep())
+    cat = Cat(83, 'Molly')
+    print(cat.meow())
+    print(cat.get_name())
+
+
+if __name__ == '__main__':
+    main()
