@@ -4,7 +4,7 @@ from collections import deque
 class Queue:
 
     def __init__(self):
-        self.queue = deque([1, ])
+        self.queue = deque()
 
     def enqueue(self, elem):
         self.queue.append(elem)
@@ -13,13 +13,10 @@ class Queue:
         if not self.is_empty():
             return self.queue.popleft()
         else:
-            return None
+            return -1
 
     def is_empty(self):
         return len(self.queue) == 0
-
-    def print(self):
-        print(self.queue)
 
 
 def main():
