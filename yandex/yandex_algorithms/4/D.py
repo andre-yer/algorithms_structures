@@ -11,8 +11,13 @@ def keyboard_usage(n, limits, order):
             print('YES')
 
 
-n = int(input())
-limits = list(map(int, input().split()))
-k = int(input())
-order = list(map(int, input().split()))
-keyboard_usage(n, limits, order)
+def main():
+    n = int(input())
+    limits = list(map(int, input().split()))
+    k = int(input())
+    order = list(map(int, input().split()))
+    keyboard_usage(n, limits, order)
+
+
+if __name__ == '__main__':
+    main()

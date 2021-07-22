@@ -8,9 +8,14 @@ def change_number(tel_number):
     return tel_number
 
 
-tel_number = change_number(input())
-for i in range(3):
-    if change_number(input()) == tel_number:
-        print('YES')
-    else:
-        print('NO')
+def main():
+    tel_number = change_number(input())
+    for i in range(3):
+        if change_number(input()) == tel_number:
+            print('YES')
+        else:
+            print('NO')
+
+
+if __name__ == '__main__':
+    main()

@@ -12,6 +12,11 @@ def turtles_truth(n, turtles_say):
     return answer
 
 
-n = int(input())
-turtles_say = [tuple(map(int, input().split())) for _ in range(n)]
-print(turtles_truth(n, turtles_say))
+def main():
+    n = int(input())
+    turtles_say = [tuple(map(int, input().split())) for _ in range(n)]
+    print(turtles_truth(n, turtles_say))
+
+
+if __name__ == '__main__':
+    main()

@@ -7,8 +7,13 @@ def pyramid(blocks_list):
     return sum(blocks_dict.values())
 
 
-n = int(input())
-blocks_list = []
-for _ in range(n):
-    blocks_list.append(tuple(map(int, input().split())))
-print(pyramid(blocks_list))
+def main():
+    n = int(input())
+    blocks_list = []
+    for _ in range(n):
+        blocks_list.append(tuple(map(int, input().split())))
+    print(pyramid(blocks_list))
+
+
+if __name__ == '__main__':
+    main()

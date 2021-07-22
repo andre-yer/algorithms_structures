@@ -13,12 +13,15 @@ def unique_words(words_list):
     return len(set(words_list))
 
 
-line_list = []
-for line in sys.stdin:
-    if not line or line == '\n':
-        break
-    else:
-        line_list.append(line.split())
+def main():
+    line_list = []
+    for line in sys.stdin:
+        if not line or line == '\n':
+            break
+        else:
+            line_list.append(line.split())
+    print(unique_words(make_words_list(line_list)))
 
-words_list = make_words_list(line_list)
-print(unique_words(make_words_list(line_list)))
+
+if __name__ == '__main__':
+    main()

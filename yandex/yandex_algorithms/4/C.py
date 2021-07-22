@@ -13,5 +13,10 @@ def freq_use_word(words_list):
     return sorted([k for k, v in words_dict.items() if v == max_value])[0]
 
 
-words_list = sys.stdin.read().split()
-print(freq_use_word(words_list))
+def main():
+    words_list = sys.stdin.read().split()
+    print(freq_use_word(words_list))
+
+
+if __name__ == '__main__':
+    main()

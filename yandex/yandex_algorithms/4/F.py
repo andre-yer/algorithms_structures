@@ -15,7 +15,12 @@ def sales(transactions):
             print(thing, sales_dict[name][thing])
 
 
-transactions = []
-for line in sys.stdin:
-    transactions.append((tuple(line.split())))
-sales(transactions)
+def main():
+    transactions = []
+    for line in sys.stdin:
+        transactions.append((tuple(line.split())))
+    sales(transactions)
+
+
+if __name__ == '__main__':
+    main()

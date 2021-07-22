@@ -23,9 +23,15 @@ def biggest_multiplication(numbers):
             elif numbers[i] <= min_2:
                 min_2 = numbers[i]
         if max_1 * max_2 * max_3 > max_1 * min_1 * min_2:
-            return (max_1, max_2, max_3)
+            return max_1, max_2, max_3
         else:
-            return (min_1, min_2, max_1)
+            return min_1, min_2, max_1
 
-numbers = list(map(int, input().split()))
-print(*biggest_multiplication(numbers))
+
+def main():
+    numbers = list(map(int, input().split()))
+    print(*biggest_multiplication(numbers))
+
+
+if __name__ == '__main__':
+    main()

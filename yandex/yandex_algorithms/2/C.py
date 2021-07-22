@@ -7,7 +7,13 @@ def nearest(numbers, x):
             answer = item
     return answer
 
-size = int(input())
-numbers = list(map(int, input().split()))
-x = int(input())
-print(nearest(numbers, x))
+
+def main():
+    size = int(input())
+    numbers = list(map(int, input().split()))
+    x = int(input())
+    print(nearest(numbers, x))
+
+
+if __name__ == '__main__':
+    main()

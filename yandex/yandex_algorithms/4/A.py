@@ -4,8 +4,13 @@ def synonym(words, syn_dict):
     return syn_dict
 
 
-n = int(input())
-syn_dict = {}
-for _ in range(n):
-    syn_dict = synonym(input().split(), syn_dict)
-print(syn_dict[input()])
+def main():
+    n = int(input())
+    syn_dict = {}
+    for _ in range(n):
+        syn_dict = synonym(input().split(), syn_dict)
+    print(syn_dict[input()])
+
+
+if __name__ == '__main__':
+    main()

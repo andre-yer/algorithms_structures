@@ -12,5 +12,10 @@ def count_words(words_list):
     return ' '.join(answer_list)
 
 
-words_list = sys.stdin.read().split()
-print(count_words(words_list))
+def main():
+    words_list = sys.stdin.read().split()
+    print(count_words(words_list))
+
+
+if __name__ == '__main__':
+    main()
